@@ -14,3 +14,7 @@ docker ps
 http://localhost:8162/admin/topics.jsp
 admin
 admin 
+
+
+http://localhost:8080/
+http://localhost:8080/swagger-ui.html#/
