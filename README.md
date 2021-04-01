@@ -6,10 +6,7 @@ test
 docker search activemq
 
 ##2, install activeMq
-docker run -d --name myactivemq \
--p 61617:61616 \
--p 8162:8161 \
-webcenter/activemq
+docker run -d --name myactivemq -p 61617:61616  -p 8162:8161  webcenter/activemq
 
 
 docker ps
