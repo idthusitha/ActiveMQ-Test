@@ -1,4 +1,4 @@
-package com.myactivemq.activemqtest.message;
+package com.myactivemq.activemqtest.topic;
 
 import javax.jms.Message;
 import javax.jms.MessageListener;
@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 import com.myactivemq.activemqtest.entity.Employee;
 
 @Component
-public class JmsConsumer implements MessageListener {
-	static Logger log = LoggerFactory.getLogger(MessageListener.class);
+public class TopicConsumerTemp implements MessageListener {
+	static Logger log = LoggerFactory.getLogger(TopicConsumerTemp.class);
 
 	@Override
 	@JmsListener(destination = "${active-mq.topic}")
@@ -29,7 +29,7 @@ public class JmsConsumer implements MessageListener {
 				e.printStackTrace();
 			}
 			
-			log.info("Received Message: " + employee.toString());
+			log.info("TopicConsumerTemp: Received Message: " + employee.toString());
 		} catch (Exception e) {
 			log.error("Received Exception : " + e);
 		}

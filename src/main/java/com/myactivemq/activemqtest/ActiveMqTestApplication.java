@@ -13,16 +13,11 @@ import org.springframework.jms.annotation.EnableJms;
 public class ActiveMqTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ActiveMqTestApplication.class, args);
-		// ApplicationContext ctx =
-		// SpringApplication.run(ActiveMqTestApplication.class, args);
-		// JmsTemplate jms = ctx.getBean(JmsTemplate.class);
-		// jms.convertAndSend("javainuse", "test message");
+		SpringApplication.run(ActiveMqTestApplication.class, args);		
 	}
 
-	@Bean
-	public Queue queue() {
-		return new ActiveMQQueue("java2blog.queue");
-	}
-
+//	@Bean
+//	public Queue queue() {
+//		return new ActiveMQQueue("java2blog.queue");
+//	}
 }

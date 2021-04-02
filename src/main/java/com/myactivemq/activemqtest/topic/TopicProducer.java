@@ -1,4 +1,4 @@
-package com.myactivemq.activemqtest.message;
+package com.myactivemq.activemqtest.topic;
 
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
@@ -10,9 +10,9 @@ import org.springframework.stereotype.Component;
 import com.myactivemq.activemqtest.entity.Employee;
 
 @Component
-public class JmsProducer {
+public class TopicProducer {
 
-	static Logger log = LoggerFactory.getLogger(JmsProducer.class);
+	static Logger log = LoggerFactory.getLogger(TopicProducer.class);
 
 	@Autowired
 	JmsTemplate jmsTemplate;
